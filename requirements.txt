@@ -1,4 +1,4 @@
-torch>=2.8.0,<2.10.0
+torch>=2.9.0,<2.10.0
 transformers>=4.35.0 
 huggingface-hub>=0.17.0 
 tokenizers>=0.14.0
