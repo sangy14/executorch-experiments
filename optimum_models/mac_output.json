@@ -1,0 +1,78 @@
+{
+    "model_path": "Qwen/Qwen2.5-1.5B-Instruct",
+    "pte_path": "executorch_models/qwen_1_5b.pte",
+    "seq_len": 64,
+    "original_prompts": [
+        "What is artificial intelligence?",
+        "Explain how machine learning works.",
+        "Describe the benefits of renewable energy."
+    ],
+    "formatted_prompts": [
+        "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat is artificial intelligence?<|im_end|>\n<|im_start|>assistant\n",
+        "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nExplain how machine learning works.<|im_end|>\n<|im_start|>assistant\n",
+        "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nDescribe the benefits of renewable energy.<|im_end|>\n<|im_start|>assistant\n"
+    ],
+    "pytorch_generations": [
+        "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. It involves using algorithms and",
+        "Machine Learning is an area of artificial intelligence that focuses on the development of algorithms and statistical models that allow computers to learn from data without being explicitly",
+        "Renewable energy refers to energy sources that can be replenished naturally over time, such as solar, wind, hydroelectric, and geothermal energy."
+    ],
+    "executorch_generations": [
+        "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. AI systems can perform tasks",
+        "Machine learning is a subset of artificial intelligence that involves the development of algorithms and statistical models that enable computers to learn from and make predictions or decisions",
+        "Renewable energy refers to energy sources that are naturally replenished over time, such as solar, wind, hydro, and geothermal power"
+    ],
+    "summary": [
+        {
+            "rouge1": {
+                "rouge1_precision": 0.8076923076923077,
+                "rouge1_recall": 0.8076923076923077,
+                "rouge1_fmeasure": 0.8076923076923077
+            },
+            "rouge2": {
+                "rouge2_precision": 0.8,
+                "rouge2_recall": 0.8,
+                "rouge2_fmeasure": 0.8000000000000002
+            },
+            "rougeL": {
+                "rougeL_precision": 0.8076923076923077,
+                "rougeL_recall": 0.8076923076923077,
+                "rougeL_fmeasure": 0.8076923076923077
+            }
+        },
+        {
+            "rouge1": {
+                "rouge1_precision": 0.6785714285714286,
+                "rouge1_recall": 0.6785714285714286,
+                "rouge1_fmeasure": 0.6785714285714286
+            },
+            "rouge2": {
+                "rouge2_precision": 0.5555555555555556,
+                "rouge2_recall": 0.5555555555555556,
+                "rouge2_fmeasure": 0.5555555555555556
+            },
+            "rougeL": {
+                "rougeL_precision": 0.6785714285714286,
+                "rougeL_recall": 0.6785714285714286,
+                "rougeL_fmeasure": 0.6785714285714286
+            }
+        },
+        {
+            "rouge1": {
+                "rouge1_precision": 0.85,
+                "rouge1_recall": 0.8095238095238095,
+                "rouge1_fmeasure": 0.8292682926829269
+            },
+            "rouge2": {
+                "rouge2_precision": 0.631578947368421,
+                "rouge2_recall": 0.6,
+                "rouge2_fmeasure": 0.6153846153846154
+            },
+            "rougeL": {
+                "rougeL_precision": 0.8,
+                "rougeL_recall": 0.7619047619047619,
+                "rougeL_fmeasure": 0.7804878048780488
+            }
+        }
+    ]
+}
